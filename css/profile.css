@@ -47,54 +47,42 @@
   /* End overview */
   .stiging {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between;
+    align-items: center; */
     margin: 0 5px 20px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+    flex-direction: column;
   }
  .stiging .sts {
   font-size: 30px;
     color: var(--blue-color);
-    margin-right: 30px;
  }
   .stiging .rond {
-    border-radius: 10px;
-    width: 220px;
+    border-radius: 20px;
+    width: 80%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 4px solid #261e1e;
-    position: relative;
-  }
-  .stiging .rond img {
-    position: absolute;
-    max-width: 100%;
-    opacity: 1;
-    transition: 1s;
+    border: 4px solid black;
+    margin: 0 auto 10px;
 
   }
-  video {
-    border: 2px solid #eee;
+   
+  .stiging .rond video {
     max-width: 100%;
     counter-reset: none;
   } 
-.stiging .rond:hover img {
- opacity: 0;
 
-}
 @media (max-width: 767px) {
   .stiging {
     padding: 10px;
   }
 .stiging .rond {
-width: 150px;
+width: 100%;
 }
 .stiging .sts {
   font-size: 20px;
-  margin-right: 0;
 }
 }
 /* Start Avatar-box  */
