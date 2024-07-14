@@ -46,26 +46,34 @@
   }
   /* End overview */
   .stiging {
-    display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
-    margin: 0 5px 20px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 5px 20px;
+      background-color: white;
+      padding: 20px;
+      border: 2px solid #00fffc ;
+      border-radius: 10px;
+  
   }
  .stiging .sts {
   font-size: 30px;
-    color: var(--blue-color);
+    color: #00fffc;
+    margin-right: 10px;
  }
   .stiging .rond {
     border-radius: 20px;
-    width: 80%;
+    /* width: 300px; */
+    min-width: 300px;
+    max-width: 400px;
     overflow: hidden;
     display: flex;
-    border: 4px solid black;
+    border: 2px dashed #00fffc;
     margin: 0 auto 10px;
+    align-items: center;
+    justify-content: center;
+    max-height: 250px;
+    /* background-color: black; */
 
   }
    
@@ -77,12 +85,17 @@
 @media (max-width: 767px) {
   .stiging {
     padding: 10px;
+    flex-direction: column;
   }
 .stiging .rond {
-width: 100%;
+width: 98%;
+max-height: 90%;
 }
 .stiging .sts {
   font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-right: 0px;
 }
 }
 /* Start Avatar-box  */
