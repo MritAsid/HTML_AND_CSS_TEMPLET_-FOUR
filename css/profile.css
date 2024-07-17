@@ -63,18 +63,12 @@
  }
   .stiging .rond {
     border-radius: 20px;
-    /* width: 300px; */
-    min-width: 300px;
-    max-width: 400px;
     overflow: hidden;
     display: flex;
     border: 2px dashed #00fffc;
     margin: 0 auto 10px;
     align-items: center;
     justify-content: center;
-    max-height: 250px;
-    /* background-color: black; */
-
   }
    
   .stiging .rond video {
@@ -88,8 +82,7 @@
     flex-direction: column;
   }
 .stiging .rond {
-width: 98%;
-max-height: 90%;
+width: calc(98% - 20px);
 }
 .stiging .sts {
   font-size: 20px;
@@ -97,6 +90,16 @@ max-height: 90%;
   margin-bottom: 5px;
   margin-right: 0px;
 }
+}
+@media (min-width: 768px) {
+  .stiging .rond {
+    width: calc(83% - 80px);
+    }
+}
+@media (min-width: 1200px) {
+  .stiging .rond {
+      width:calc(60% - 100px);
+  }
 }
 /* Start Avatar-box  */
  .profile-page .avatar-box {
